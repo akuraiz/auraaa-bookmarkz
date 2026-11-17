@@ -6,16 +6,8 @@
   "accent": "#ff7a1a",
   "adminHash": "9cdd8325502bdae7578075fcaea937b45078d4f098196c3904db10473d690db4"
  },
+ "updated": "2026-11-17T17:52:26.668Z",
  "items": [
-  {
-   "id": "mwkzg0hbgjjo",
-   "name": "test",
-   "category": "General",
-   "icon": "bookmark",
-   "desc": "test",
-   "code": "dfssdassds",
-   "status": "published"
-  },
   {
    "id": "s1",
    "name": "Invert page colors",
@@ -61,6 +53,5 @@
    "code": "var s=String(window.getSelection()).trim()||document.body.innerText;var w=(s.match(/\\S+/g)||[]).length;alert(w+' words, '+s.length+' characters');",
    "status": "published"
   }
- ],
- "updated": "2026-11-17T17:51:04.448Z"
+ ]
 }
