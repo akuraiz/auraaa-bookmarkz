@@ -1,0 +1,66 @@
+{
+ "settings": {
+  "siteName": "Bookmarklet Library",
+  "tagline": "Pick a tool, copy it, and add it to your bookmarks bar.",
+  "logo": "bookmark",
+  "accent": "#ff7a1a",
+  "adminHash": "9cdd8325502bdae7578075fcaea937b45078d4f098196c3904db10473d690db4"
+ },
+ "items": [
+  {
+   "id": "mwkzg0hbgjjo",
+   "name": "test",
+   "category": "General",
+   "icon": "bookmark",
+   "desc": "test",
+   "code": "dfssdassds",
+   "status": "published"
+  },
+  {
+   "id": "s1",
+   "name": "Invert page colors",
+   "category": "Page tools",
+   "icon": "contrast",
+   "desc": "Instant dark mode for any page. Click again to turn off.",
+   "code": "var s=document.getElementById('__inv');if(s){s.remove();return}s=document.createElement('style');s.id='__inv';s.textContent='html{filter:invert(1) hue-rotate(180deg)}img,video{filter:invert(1) hue-rotate(180deg)}';document.head.appendChild(s);",
+   "status": "published"
+  },
+  {
+   "id": "s2",
+   "name": "Copy title and link",
+   "category": "Productivity",
+   "icon": "clipboard",
+   "desc": "Copies the page title and address to your clipboard.",
+   "code": "var t=document.title+' - '+location.href;var a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();document.execCommand('copy');a.remove();alert('Copied: '+t);",
+   "status": "published"
+  },
+  {
+   "id": "s3",
+   "name": "Highlight all links",
+   "category": "Page tools",
+   "icon": "link",
+   "desc": "Puts a bright outline around every link on the page.",
+   "code": "document.querySelectorAll('a').forEach(function(a){a.style.outline='2px solid #ff7a1a';a.style.background='#fff3a8'});",
+   "status": "published"
+  },
+  {
+   "id": "s4",
+   "name": "Make page editable",
+   "category": "Page tools",
+   "icon": "type",
+   "desc": "Click and type anywhere on the page to edit the text (not saved).",
+   "code": "document.designMode=document.designMode==='on'?'off':'on';",
+   "status": "published"
+  },
+  {
+   "id": "s5",
+   "name": "Word counter",
+   "category": "Productivity",
+   "icon": "hash",
+   "desc": "Counts words in your selected text, or the whole page if nothing is selected.",
+   "code": "var s=String(window.getSelection()).trim()||document.body.innerText;var w=(s.match(/\\S+/g)||[]).length;alert(w+' words, '+s.length+' characters');",
+   "status": "published"
+  }
+ ],
+ "updated": "2026-11-17T17:51:04.448Z"
+}
